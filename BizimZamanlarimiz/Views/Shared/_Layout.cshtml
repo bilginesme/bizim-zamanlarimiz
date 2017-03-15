@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bizim Zamanlarımız | @ViewBag.Title</title>
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/bundles/css")
+    @Scripts.Render("~/bundles/scripts")
+
+
+    @RenderSection("scripts", required: false)
+
+    <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-2519654-1', 'auto');
+              ga('send', 'pageview');
+
+    </script>
+
+    <!-- Description, Keywords and Author -->
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your,Keywords">
+    <meta name="author" content="Bilgin Esme">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="#"><!-- Favicon -->
+</head>
+
+<!-- Add class "boxed" along with body for boxed layout. -->
+<!-- Add "pattern-x" (1 to 5) for background patterns. -->
+<!-- Add "img-x" (1 to 5) for background images. -->
+<body class="boxed pattern-5">
+    <div class="outer">
+        <div class="top-bar">
+            <div class="container">
+                <div class="tb-contact pull-left">
+                    <i class="fa fa-envelope color"></i> &nbsp; <a href="mailto:besme@esme.org">besme@esme.org</a>
+                    &nbsp;&nbsp;
+                </div><!-- CONTACT -->
+
+                <div class="tb-search pull-left">
+                    <a href="#" class="b-dropdown"><i class="fa fa-search square-2 rounded-1 bg-color white"></i></a>
+                    <div class="b-dropdown-block">
+                        <form role="form">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Type Something">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-color" type="button">Search</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- SEARCH -->
+
+                <div class="tb-social pull-right">
+                    <div class="brand-bg text-right">
+                        <a href="https://www.facebook.com/bilginesme" class="facebook" target="_blank"><i class="fa fa-facebook square-2 rounded-1"></i></a>
+                        <a href="https://twitter.com/bilginesme" class="twitter" target="_blank"><i class="fa fa-twitter square-2 rounded-1"></i></a>
+                        <a href="http://www.linkedin.com/in/bilginesme" class="linkedin" target="_blank"><i class="fa fa-linkedin square-2 rounded-1"></i></a>
+                    </div>
+                </div><!-- SOCIAL MEDIA -->
+
+                <div class="clearfix"></div>
+            </div>
+        </div><!-- TOP BAR -->
+
+        <div class="header-1">
+            <div class="container">
+                <div class="row" style="margin-top:-10px">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="logo">
+                            <h1><a href="@Url.Action("Index", "Home")" data-toggle="tooltip" title="Click to go to the home page!"><i class="fa fa-newspaper-o fa-lg"></i> Bizim Zamanlarımız</a></h1>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-5 col-sm-5 col-sm-offset-3 hidden-xs">
+                        <div class="header-search hidden">
+                            <form role="form">
+                                <!-- Input Group -->
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Type Something">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-color" type="button">Search</button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div><!-- Search Form -->
+                    </div>
+
+                </div>
+            </div><!-- LOGO -->
+
+            <div class="navi">
+                <div class="container">
+                    <div class="navy">
+                        <ul>
+                            <li><a href="/">Ana Sayfa</a></li>
+                            <li>
+                                <a href="#">Yeniler</a>
+                                <ul>
+                                    <li>@Html.ActionLink("Bağdat Caddesi'ne Ağıt", "BagdatCaddesi", "Tales")</li>
+                                    <li>@Html.ActionLink("Boncuk", "Boncuk", "Tales")</li>
+                                    <li>@Html.ActionLink("TeksasTommiks", "TeksasTommiks", "Tales")</li>
+                                    <li>@Html.ActionLink("Zonguldak", "Zonguldak", "Tales")</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Seçme</a>
+                                <ul>
+                                    <li>@Html.ActionLink("Boncuk", "Boncuk", "Tales")</li>
+                                    <li>@Html.ActionLink("TeksasTommiks", "TeksasTommiks", "Tales")</li>
+                                    <li>@Html.ActionLink("Zonguldak", "Zonguldak", "Tales")</li>
+                                </ul>
+                            </li>
+                            <li class="hidden">
+                                <a href="#">Other Articles</a>
+                                <ul>
+                                    <li>@Html.ActionLink("Rembetika", "Rembetika", "Tales")</li>
+                                    <li>@Html.ActionLink("Bagdat Caddesi", "BagdatCaddesi", "Tales")</li>
+                                    <li>@Html.ActionLink("My Village", "MyVillage", "Tales")</li>
+                                    <li>@Html.ActionLink("For Hrant Dink", "ForHrantDink", "Tales")</li>
+                                    <li>@Html.ActionLink("Volcano Island", "VolcanoIsland", "BitsAndBytes")</li>
+                                    <li>
+                                        <a href="portfolio-single.html">Legacy Articles</a>
+                                        <ul>
+                                            <li>@Html.ActionLink("Cesaria Evora", "CesariaEvora", "Tales")</li>
+                                            <li>@Html.ActionLink("Journey to Gruyéres", "JourneyToGruyeres", "Tales")</li>
+                                            <li>@Html.ActionLink("Dark Matter", "DarkMatter", "Tales")</li>
+                                            <li>@Html.ActionLink("Quit Watch", "GameDevTwoPlatforms", "BitsAndBytes")</li>
+                                            <li>@Html.ActionLink("Crumpler - Wee Bee", "Crumpler", "BitsAndBytes")</li>
+                                            <li>@Html.ActionLink("Portuguese and Turks", "PortugueseAndTurks", "Tales")</li>
+                                            <li>@Html.ActionLink("Biking Lake Leman", "BikingLakeLeman", "Tales")</li>
+                                            <li>@Html.ActionLink("Once Upon a Time There was a USSR", "OnceUponATimeUSSR", "Tales")</li>
+                                            <li>@Html.ActionLink("eptaxia", "eptaxia", "BitsAndBytes")</li>
+                                            <li>@Html.ActionLink("As a Man Thinketh", "GameDevTwoPlatforms", "BitsAndBytes")</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="portfolio-single.html">My PhD Journal</a>
+                                        <ul>
+                                            <li>@Html.ActionLink("My PhD Journey", "MyPhDJournal", "BitsAndBytes")</li>
+                                            <li>@Html.ActionLink("Age Estimation", "AgeEstimation", "BitsAndBytes")</li>
+                                            <li>@Html.ActionLink("My Own Work", "MyOwnWork", "BitsAndBytes")</li>
+                                            <li>@Html.ActionLink("Hollywood Database", "HollywoodDatabase", "BitsAndBytes")</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>@Html.ActionLink("Hakkımda", "AboutMe", "Home")</li>
+                            <li>@Html.ActionLink("İletişim", "Contact", "Home")</li>
+                        </ul>
+
+                        <ul class="pull-right">
+                            <li>
+                                @if (Context.User.Identity.IsAuthenticated)
+                                { @Html.ActionLink("Log Out", "LogOut", "Account") }
+                            </li>
+                        </ul>
+                    </div><!-- MENU -->
+                </div>
+            </div><!-- NAVIGATION -->
+        </div><!-- HEADER -->
+
+        <br />
+
+        <div class="main-block">
+            <div class="magazine">
+                <div class="container">
+                    <div class="row">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </div><!-- MAIN BODY -->
+
+        <div class="foot">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="foot-item">
+                            <!-- Heading -->
+                            <h5 class="bold"><i class="fa fa-user"></i>&nbsp;&nbsp;Hakkımda</h5>
+                            <img src="~/Content/Images/BilginHaziran2009.jpg" alt="Bilgin Esme" class="img-responsive img-rounded pull-left" style="max-width:50px;margin-right:10px" />
+                            <p>
+                                My name is <b>Bilgin Esme</b>.
+                                <br />
+                            </p>
+                            <p>
+                                I'm running this site to share what I've
+                                learned from life and give as much contribution as possible.
+                                <br /><br />
+                            </p>
+                            <p>
+                                Click @Html.ActionLink("here", "AboutMe", "Home") for more info : @Html.ActionLink("About Me", "AboutMe", "Home")
+                                <br /><br />
+                            </p>
+                            <div class="brand-bg">
+                                <a href="https://www.facebook.com/bilginesme" class="facebook" target="_blank"><i class="fa fa-facebook circle-3"></i></a>
+                                <a href="https://twitter.com/bilginesme" class="twitter" target="_blank"><i class="fa fa-twitter circle-3"></i></a>
+                                <a href="http://www.linkedin.com/in/bilginesme" class="linkedin" target="_blank"><i class="fa fa-linkedin circle-3"></i></a>
+                            </div><!-- SOCIAL MEDIA ICONS -->
+
+
+                        </div>
+                    </div><!-- About Me and Social Icons -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="foot-item">
+                            <!-- Heading -->
+                            <h5 class="bold"><i class="fa fa-comments"></i>&nbsp;&nbsp;Güncel Yazılar</h5>
+                            <div class="foot-item-content">
+                                <ul class="list-unstyled">
+                                    <!-- Link -->
+                                    <li>@Html.ActionLink("Boncuk", "Boncuk", "Tales")</li>
+                                    <li>@Html.ActionLink("TeksasTommiks", "TeksasTommiks", "Tales")</li>
+                                    <li>@Html.ActionLink("Zonguldak", "Zonguldak", "Tales")</li>
+                                </ul>
+                            </div><!-- Foot Item Content -->
+                        </div>
+                    </div><!-- Recent Posts -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="foot-item">
+                            <!-- Heading -->
+                            <h5 class="bold"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Güncel Resimler</h5>
+                            <!-- Foot Item Content -->
+                            <div class="foot-item-content">
+                                <div class="foot-recent-img">
+                                    <a href="~/Content/Images/ImagesIPicked/GalaxyQuest.jpg" class="lightbox"><img src="~/Content/Images/ImagesIPicked/GalaxyQuest.jpg" alt="Galaxy Quest - Never giver up, never surrender!" class="img-responsive img-thumbnail" /></a>
+                                    <a href="~/Content/Images/ImagesIPicked/GhostBusters.jpg" class="lightbox"><img src="~/Content/Images/ImagesIPicked/GhostBusters.jpg" alt="Ghost Busters - Legends are forever" class="img-responsive img-thumbnail" /></a>
+                                    <a href="~/Content/Images/ImagesIPicked/MoviesWhileCoding.jpg" class="lightbox"><img src="~/Content/Images/ImagesIPicked/MoviesWhileCoding.jpg" alt="Movies I Like to Watch - While I'm coding" class="img-responsive img-thumbnail" /></a>
+                                </div>
+                                <div class="foot-recent-img">
+                                    <a href="~/Content/Images/ImagesIPicked/RulesOfTheGameMonopoly.jpg" class="lightbox"><img src="~/Content/Images/ImagesIPicked/RulesOfTheGameMonopoly.jpg" alt="Rules of Monopoly - and the bitter truth about life" class="img-responsive img-thumbnail" /></a>
+                                    <a href="~/Content/Images/ImagesIPicked/WhenICompareMyself.jpg" class="lightbox"><img src="~/Content/Images/ImagesIPicked/WhenICompareMyself.jpg" alt="When I Compare Myself ... - from Zen Pencils" class="img-responsive img-thumbnail" /></a>
+                                </div>
+                            </div>
+                            <div>
+                                @Html.ActionLink("Tümü", "ImagesIPicked", "Home")
+                            </div>
+
+                        </div>
+                    </div><!-- Recent Images -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="foot-item">
+                            <h5 class="bold"><i class="fa fa-building-o"></i>&nbsp;&nbsp;İletişim</h5>
+                            <div class="foot-item-content address">
+                                <h6 class="bold"><i class="fa fa-home"></i>&nbsp;&nbsp;Bilgin Eşme</h6>
+                                <p class="add">
+                                    Istanbul TURKEY
+                                </p>
+                                <p class="tel">
+                                    <i class="fa fa-envelope"></i>  Mail : <a href="mailto:besme@esme.org">besme@esme.org</a><br />
+                                    <i class="fa fa-calendar"></i> Aktif Saatler : 10:00 - 19:00 GMT+2
+                                </p>
+                            </div>
+                            <div class="subscribe-box hidden">
+                                <h5 class="bold">Subscribe :</h5>
+                                <form role="form">
+                                    <!-- Input Group -->
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Enter Email Id">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-color" type="button">Subscribe</button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div><!-- SUBSCRIBE FORM -->
+                        </div>
+                    </div><!-- Address and Subscribe -->
+                </div>
+            </div>
+        </div><!-- FOOT TOP -->
+
+        <footer>
+            <div class="container">
+                <p class="pull-left">Copyright &copy; 2015 - @Html.ActionLink("Bilgin Esme", "AboutMe", "Home")</p>
+                <ul class="list-inline pull-right">
+                    <li>@Html.ActionLink("Ana Sayfa", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Hakkımda", "AboutMe", "Home")</li>
+                    <li>@Html.ActionLink("İletişim", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Terms of Use", "TermsOfUse", "Home")</li>
+                    <li></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+        </footer><!-- FOOTER BOTTOM -->
+    </div>
+
+    <span class="totop"><a href="#"><i class="fa fa-angle-up bg-color"></i></a></span><!-- Scroll to top -->
+
+</body>
+</html>

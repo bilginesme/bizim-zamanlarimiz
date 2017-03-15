@@ -1,0 +1,833 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{99AF9310-9BBC-4C1E-B015-C2ADAD3F00BC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BenimZamanlarim</RootNamespace>
+    <AssemblyName>BenimZamanlarim</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TalesController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\animate.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\custom.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\Images\AboutMe\BilginChild.jpg" />
+    <Content Include="Content\Images\AboutMe\BilginDestech.JPG" />
+    <Content Include="Content\Images\AboutMe\BilginEsme.jpg" />
+    <Content Include="Content\Images\AboutMe\BilginITU.jpg" />
+    <Content Include="Content\Images\AboutMe\BilginKAL.jpg" />
+    <Content Include="Content\Images\AboutMe\BilginPrimarySchool.jpg" />
+    <Content Include="Content\Images\AboutMe\BilginSignature_100x111.jpg" />
+    <Content Include="Content\Images\AboutMe\BilginWedding.jpg" />
+    <Content Include="Content\Images\BilginHaziran2009.jpg" />
+    <Content Include="Content\Images\Brave\aboutus\about-office-1.jpg" />
+    <Content Include="Content\Images\Brave\aboutus\about-office-2.jpg" />
+    <Content Include="Content\Images\Brave\aboutus\about-office-3.jpg" />
+    <Content Include="Content\Images\Brave\app-site\background.jpg" />
+    <Content Include="Content\Images\Brave\app-site\features\1.png" />
+    <Content Include="Content\Images\Brave\app-site\features\2.png" />
+    <Content Include="Content\Images\Brave\app-site\features\3.png" />
+    <Content Include="Content\Images\Brave\app-site\features\4.png" />
+    <Content Include="Content\Images\Brave\app-site\features\5.png" />
+    <Content Include="Content\Images\Brave\app-site\features\6.png" />
+    <Content Include="Content\Images\Brave\app-site\features\7.png" />
+    <Content Include="Content\Images\Brave\app-site\features\8.png" />
+    <Content Include="Content\Images\Brave\app-site\iphone.png" />
+    <Content Include="Content\Images\Brave\backgrounds\1.jpg" />
+    <Content Include="Content\Images\Brave\backgrounds\2.jpg" />
+    <Content Include="Content\Images\Brave\backgrounds\3.jpg" />
+    <Content Include="Content\Images\Brave\backgrounds\4.jpg" />
+    <Content Include="Content\Images\Brave\backgrounds\5.jpg" />
+    <Content Include="Content\Images\Brave\backgrounds\bg-image.jpg" />
+    <Content Include="Content\Images\Brave\backgrounds\heading-back.jpg" />
+    <Content Include="Content\Images\Brave\backgrounds\s1.jpg" />
+    <Content Include="Content\Images\Brave\backgrounds\s2.jpg" />
+    <Content Include="Content\Images\Brave\backgrounds\s3.jpg" />
+    <Content Include="Content\Images\Brave\backgrounds\s4.jpg" />
+    <Content Include="Content\Images\Brave\body\img\1.jpg" />
+    <Content Include="Content\Images\Brave\body\img\2.jpg" />
+    <Content Include="Content\Images\Brave\body\img\3.jpg" />
+    <Content Include="Content\Images\Brave\body\img\4.jpg" />
+    <Content Include="Content\Images\Brave\body\img\5.jpg" />
+    <Content Include="Content\Images\Brave\body\pattern\1.png" />
+    <Content Include="Content\Images\Brave\body\pattern\2.png" />
+    <Content Include="Content\Images\Brave\body\pattern\3.png" />
+    <Content Include="Content\Images\Brave\body\pattern\4.png" />
+    <Content Include="Content\Images\Brave\body\pattern\5.png" />
+    <Content Include="Content\Images\Brave\clients\c1-1.png" />
+    <Content Include="Content\Images\Brave\clients\c1-2.png" />
+    <Content Include="Content\Images\Brave\clients\c1-3.png" />
+    <Content Include="Content\Images\Brave\clients\c1-4.png" />
+    <Content Include="Content\Images\Brave\clients\c1-5.png" />
+    <Content Include="Content\Images\Brave\clients\c1-6.png" />
+    <Content Include="Content\Images\Brave\clients\c2-1.png" />
+    <Content Include="Content\Images\Brave\clients\c2-2.png" />
+    <Content Include="Content\Images\Brave\clients\c2-3.png" />
+    <Content Include="Content\Images\Brave\clients\c2-4.png" />
+    <Content Include="Content\Images\Brave\clients\c2-5.png" />
+    <Content Include="Content\Images\Brave\clients\c2-6.png" />
+    <Content Include="Content\Images\Brave\dividers\1.png" />
+    <Content Include="Content\Images\Brave\dividers\2.png" />
+    <Content Include="Content\Images\Brave\dividers\3.png" />
+    <Content Include="Content\Images\Brave\ecommerce\items\1-1.png" />
+    <Content Include="Content\Images\Brave\ecommerce\items\1-2.png" />
+    <Content Include="Content\Images\Brave\ecommerce\items\1-3.png" />
+    <Content Include="Content\Images\Brave\ecommerce\items\1-4.png" />
+    <Content Include="Content\Images\Brave\ecommerce\items\1.png" />
+    <Content Include="Content\Images\Brave\ecommerce\items\10.png" />
+    <Content Include="Content\Images\Brave\ecommerce\items\11.png" />
+    <Content Include="Content\Images\Brave\ecommerce\items\12.png" />
+    <Content Include="Content\Images\Brave\ecommerce\items\13.png" />
+    <Content Include="Content\Images\Brave\ecommerce\items\2.png" />
+    <Content Include="Content\Images\Brave\ecommerce\items\3.png" />
+    <Content Include="Content\Images\Brave\ecommerce\items\4.png" />
+    <Content Include="Content\Images\Brave\ecommerce\items\5.png" />
+    <Content Include="Content\Images\Brave\ecommerce\items\6.png" />
+    <Content Include="Content\Images\Brave\ecommerce\items\7.png" />
+    <Content Include="Content\Images\Brave\ecommerce\items\8.png" />
+    <Content Include="Content\Images\Brave\ecommerce\items\9.png" />
+    <Content Include="Content\Images\Brave\ecommerce\slider\1.jpg" />
+    <Content Include="Content\Images\Brave\ecommerce\slider\2.jpg" />
+    <Content Include="Content\Images\Brave\ecommerce\slider\3.jpg" />
+    <Content Include="Content\Images\Brave\ecommerce\view-cart\1.png" />
+    <Content Include="Content\Images\Brave\ecommerce\view-cart\2.png" />
+    <Content Include="Content\Images\Brave\flat-icons\1.png" />
+    <Content Include="Content\Images\Brave\flat-icons\10.png" />
+    <Content Include="Content\Images\Brave\flat-icons\11.png" />
+    <Content Include="Content\Images\Brave\flat-icons\12.png" />
+    <Content Include="Content\Images\Brave\flat-icons\13.png" />
+    <Content Include="Content\Images\Brave\flat-icons\14.png" />
+    <Content Include="Content\Images\Brave\flat-icons\15.png" />
+    <Content Include="Content\Images\Brave\flat-icons\16.png" />
+    <Content Include="Content\Images\Brave\flat-icons\17.png" />
+    <Content Include="Content\Images\Brave\flat-icons\18.png" />
+    <Content Include="Content\Images\Brave\flat-icons\19.png" />
+    <Content Include="Content\Images\Brave\flat-icons\2.png" />
+    <Content Include="Content\Images\Brave\flat-icons\20.png" />
+    <Content Include="Content\Images\Brave\flat-icons\21.png" />
+    <Content Include="Content\Images\Brave\flat-icons\22.png" />
+    <Content Include="Content\Images\Brave\flat-icons\3.png" />
+    <Content Include="Content\Images\Brave\flat-icons\4.png" />
+    <Content Include="Content\Images\Brave\flat-icons\5.png" />
+    <Content Include="Content\Images\Brave\flat-icons\6.png" />
+    <Content Include="Content\Images\Brave\flat-icons\7.png" />
+    <Content Include="Content\Images\Brave\flat-icons\8.png" />
+    <Content Include="Content\Images\Brave\flat-icons\9.png" />
+    <Content Include="Content\Images\Brave\gallery\big\1.jpg" />
+    <Content Include="Content\Images\Brave\gallery\big\2.jpg" />
+    <Content Include="Content\Images\Brave\gallery\big\3.jpg" />
+    <Content Include="Content\Images\Brave\gallery\big\4.jpg" />
+    <Content Include="Content\Images\Brave\gallery\big\5.jpg" />
+    <Content Include="Content\Images\Brave\gallery\big\6.jpg" />
+    <Content Include="Content\Images\Brave\gallery\big\7.jpg" />
+    <Content Include="Content\Images\Brave\gallery\big\8.jpg" />
+    <Content Include="Content\Images\Brave\gallery\small\1.jpg" />
+    <Content Include="Content\Images\Brave\gallery\small\2.jpg" />
+    <Content Include="Content\Images\Brave\gallery\small\3.jpg" />
+    <Content Include="Content\Images\Brave\gallery\small\4.jpg" />
+    <Content Include="Content\Images\Brave\gallery\small\5.jpg" />
+    <Content Include="Content\Images\Brave\gallery\small\6.jpg" />
+    <Content Include="Content\Images\Brave\gallery\small\7.jpg" />
+    <Content Include="Content\Images\Brave\gallery\small\8.jpg" />
+    <Content Include="Content\Images\Brave\magazine\1.jpg" />
+    <Content Include="Content\Images\Brave\magazine\2.jpg" />
+    <Content Include="Content\Images\Brave\magazine\3.jpg" />
+    <Content Include="Content\Images\Brave\magazine\4.jpg" />
+    <Content Include="Content\Images\Brave\magazine\small\1.jpg" />
+    <Content Include="Content\Images\Brave\magazine\small\2.jpg" />
+    <Content Include="Content\Images\Brave\magazine\small\3.jpg" />
+    <Content Include="Content\Images\Brave\magazine\small\4.jpg" />
+    <Content Include="Content\Images\Brave\medical\big\1.jpg" />
+    <Content Include="Content\Images\Brave\medical\big\2.jpg" />
+    <Content Include="Content\Images\Brave\medical\big\3.jpg" />
+    <Content Include="Content\Images\Brave\medical\big\4.jpg" />
+    <Content Include="Content\Images\Brave\medical\medium\1.jpg" />
+    <Content Include="Content\Images\Brave\medical\medium\2.jpg" />
+    <Content Include="Content\Images\Brave\medical\medium\3.jpg" />
+    <Content Include="Content\Images\Brave\medical\medium\4.jpg" />
+    <Content Include="Content\Images\Brave\medical\medium\5.jpg" />
+    <Content Include="Content\Images\Brave\medical\medium\6.jpg" />
+    <Content Include="Content\Images\Brave\medical\small\1.jpg" />
+    <Content Include="Content\Images\Brave\medical\small\2.jpg" />
+    <Content Include="Content\Images\Brave\medical\small\3.jpg" />
+    <Content Include="Content\Images\Brave\medical\small\4.jpg" />
+    <Content Include="Content\Images\Brave\medical\small\5.jpg" />
+    <Content Include="Content\Images\Brave\medical\small\6.jpg" />
+    <Content Include="Content\Images\Brave\menu\button_down%402x.png" />
+    <Content Include="Content\Images\Brave\menu\button_down.png" />
+    <Content Include="Content\Images\Brave\menu\button_up%402x.png" />
+    <Content Include="Content\Images\Brave\menu\button_up.png" />
+    <Content Include="Content\Images\Brave\menu\downArrow%402x.png" />
+    <Content Include="Content\Images\Brave\menu\downArrow-b%402x.png" />
+    <Content Include="Content\Images\Brave\menu\downArrow-b.png" />
+    <Content Include="Content\Images\Brave\menu\downArrow.png" />
+    <Content Include="Content\Images\Brave\menu\icons\icon_dribbble%402x.png" />
+    <Content Include="Content\Images\Brave\menu\icons\icon_dribbble.png" />
+    <Content Include="Content\Images\Brave\menu\icons\icon_facebook%402x.png" />
+    <Content Include="Content\Images\Brave\menu\icons\icon_facebook.png" />
+    <Content Include="Content\Images\Brave\menu\icons\icon_flickr%402x.png" />
+    <Content Include="Content\Images\Brave\menu\icons\icon_flickr.png" />
+    <Content Include="Content\Images\Brave\menu\icons\icon_twitter%402x.png" />
+    <Content Include="Content\Images\Brave\menu\icons\icon_twitter.png" />
+    <Content Include="Content\Images\Brave\menu\icons\icon_vimeo%402x.png" />
+    <Content Include="Content\Images\Brave\menu\icons\icon_vimeo.png" />
+    <Content Include="Content\Images\Brave\menu\icons\mini-icons-white%402x.png" />
+    <Content Include="Content\Images\Brave\menu\icons\mini-icons-white.png" />
+    <Content Include="Content\Images\Brave\menu\leftArrow%402x.png" />
+    <Content Include="Content\Images\Brave\menu\leftArrow.png" />
+    <Content Include="Content\Images\Brave\menu\rightArrow%402x.png" />
+    <Content Include="Content\Images\Brave\menu\rightArrow.png" />
+    <Content Include="Content\Images\Brave\menu\toggle%402x.png" />
+    <Content Include="Content\Images\Brave\menu\toggle.png" />
+    <Content Include="Content\Images\Brave\menu\upArrow%402x.png" />
+    <Content Include="Content\Images\Brave\menu\upArrow.png" />
+    <Content Include="Content\Images\Brave\non-profit\big\1.jpg" />
+    <Content Include="Content\Images\Brave\non-profit\big\2.jpg" />
+    <Content Include="Content\Images\Brave\non-profit\big\3.jpg" />
+    <Content Include="Content\Images\Brave\non-profit\big\4.jpg" />
+    <Content Include="Content\Images\Brave\non-profit\big\5.jpg" />
+    <Content Include="Content\Images\Brave\non-profit\medium\1.jpg" />
+    <Content Include="Content\Images\Brave\non-profit\medium\2.jpg" />
+    <Content Include="Content\Images\Brave\non-profit\medium\3.jpg" />
+    <Content Include="Content\Images\Brave\non-profit\medium\4.jpg" />
+    <Content Include="Content\Images\Brave\non-profit\medium\5.jpg" />
+    <Content Include="Content\Images\Brave\non-profit\medium\6.jpg" />
+    <Content Include="Content\Images\Brave\non-profit\medium\7.jpg" />
+    <Content Include="Content\Images\Brave\non-profit\medium\8.jpg" />
+    <Content Include="Content\Images\Brave\non-profit\small\1.jpg" />
+    <Content Include="Content\Images\Brave\non-profit\small\2.jpg" />
+    <Content Include="Content\Images\Brave\non-profit\small\3.jpg" />
+    <Content Include="Content\Images\Brave\non-profit\small\4.jpg" />
+    <Content Include="Content\Images\Brave\non-profit\small\5.jpg" />
+    <Content Include="Content\Images\Brave\non-profit\small\6.jpg" />
+    <Content Include="Content\Images\Brave\non-profit\small\7.jpg" />
+    <Content Include="Content\Images\Brave\non-profit\small\8.jpg" />
+    <Content Include="Content\Images\Brave\our-process\arrow.png" />
+    <Content Include="Content\Images\Brave\overlay.png" />
+    <Content Include="Content\Images\Brave\parallax-slider\arrows.png" />
+    <Content Include="Content\Images\Brave\parallax-slider\back.png" />
+    <Content Include="Content\Images\Brave\parallax-slider\img1.png" />
+    <Content Include="Content\Images\Brave\parallax-slider\img2.png" />
+    <Content Include="Content\Images\Brave\parallax-slider\img3.png" />
+    <Content Include="Content\Images\Brave\parallax-slider\img4.png" />
+    <Content Include="Content\Images\Brave\parallax\mac1.png" />
+    <Content Include="Content\Images\Brave\parallax\mac2.png" />
+    <Content Include="Content\Images\Brave\portfolio\user.jpg" />
+    <Content Include="Content\Images\Brave\product\desktop.png" />
+    <Content Include="Content\Images\Brave\raster.png" />
+    <Content Include="Content\Images\Brave\real-estate\big\1.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\big\2.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\big\3.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\big\4.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\medium\1.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\medium\2.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\medium\3.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\medium\4.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\medium\5.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\medium\6.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\medium\7.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\medium\8.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\slider\1.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\slider\2.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\slider\3.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\slider\4.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\slider\5.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\small\1.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\small\2.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\small\3.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\small\4.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\small\5.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\small\6.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\small\7.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\small\8.jpg" />
+    <Content Include="Content\Images\Brave\real-estate\small\9.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\big\1.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\big\2.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\big\3.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\big\4.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\medium\1.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\medium\10.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\medium\11.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\medium\12.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\medium\2.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\medium\3.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\medium\4.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\medium\5.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\medium\6.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\medium\7.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\medium\8.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\medium\9.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\small\1.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\small\10.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\small\11.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\small\12.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\small\2.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\small\3.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\small\4.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\small\5.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\small\6.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\small\7.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\small\8.jpg" />
+    <Content Include="Content\Images\Brave\restaurant\small\9.jpg" />
+    <Content Include="Content\Images\Brave\rev-slider\1.jpg" />
+    <Content Include="Content\Images\Brave\rev-slider\3.jpg" />
+    <Content Include="Content\Images\Brave\rev-slider\4.jpg" />
+    <Content Include="Content\Images\Brave\rev-slider\brave.png" />
+    <Content Include="Content\Images\Brave\rev-slider\girl1.png" />
+    <Content Include="Content\Images\Brave\rev-slider\girl2.png" />
+    <Content Include="Content\Images\Brave\rev-slider\girl3.png" />
+    <Content Include="Content\Images\Brave\rev-slider\girl4.png" />
+    <Content Include="Content\Images\Brave\rev-slider\girl5.png" />
+    <Content Include="Content\Images\Brave\rev-slider\iphone1.png" />
+    <Content Include="Content\Images\Brave\rev-slider\iphone2.png" />
+    <Content Include="Content\Images\Brave\rev-slider\mockup1.png" />
+    <Content Include="Content\Images\Brave\rev-slider\mockup2.png" />
+    <Content Include="Content\Images\Brave\rev-slider\mockup3.png" />
+    <Content Include="Content\Images\Brave\rev-slider\mockup4.png" />
+    <Content Include="Content\Images\Brave\rev-slider\transparent.png" />
+    <Content Include="Content\Images\Brave\service\logo.png" />
+    <Content Include="Content\Images\Brave\ui\1.png" />
+    <Content Include="Content\Images\Brave\ui\10.png" />
+    <Content Include="Content\Images\Brave\ui\11.png" />
+    <Content Include="Content\Images\Brave\ui\12.png" />
+    <Content Include="Content\Images\Brave\ui\13.png" />
+    <Content Include="Content\Images\Brave\ui\14.png" />
+    <Content Include="Content\Images\Brave\ui\15.png" />
+    <Content Include="Content\Images\Brave\ui\16.png" />
+    <Content Include="Content\Images\Brave\ui\17.png" />
+    <Content Include="Content\Images\Brave\ui\18.png" />
+    <Content Include="Content\Images\Brave\ui\19.png" />
+    <Content Include="Content\Images\Brave\ui\2.png" />
+    <Content Include="Content\Images\Brave\ui\20.png" />
+    <Content Include="Content\Images\Brave\ui\21.png" />
+    <Content Include="Content\Images\Brave\ui\22.png" />
+    <Content Include="Content\Images\Brave\ui\23.png" />
+    <Content Include="Content\Images\Brave\ui\24.png" />
+    <Content Include="Content\Images\Brave\ui\25.png" />
+    <Content Include="Content\Images\Brave\ui\26.png" />
+    <Content Include="Content\Images\Brave\ui\27.png" />
+    <Content Include="Content\Images\Brave\ui\28.png" />
+    <Content Include="Content\Images\Brave\ui\29.png" />
+    <Content Include="Content\Images\Brave\ui\3.png" />
+    <Content Include="Content\Images\Brave\ui\30.png" />
+    <Content Include="Content\Images\Brave\ui\31.png" />
+    <Content Include="Content\Images\Brave\ui\32.png" />
+    <Content Include="Content\Images\Brave\ui\33.png" />
+    <Content Include="Content\Images\Brave\ui\34.png" />
+    <Content Include="Content\Images\Brave\ui\35.png" />
+    <Content Include="Content\Images\Brave\ui\36.png" />
+    <Content Include="Content\Images\Brave\ui\37.png" />
+    <Content Include="Content\Images\Brave\ui\38.png" />
+    <Content Include="Content\Images\Brave\ui\39.png" />
+    <Content Include="Content\Images\Brave\ui\4.png" />
+    <Content Include="Content\Images\Brave\ui\40.png" />
+    <Content Include="Content\Images\Brave\ui\41.png" />
+    <Content Include="Content\Images\Brave\ui\42.png" />
+    <Content Include="Content\Images\Brave\ui\43.png" />
+    <Content Include="Content\Images\Brave\ui\44.png" />
+    <Content Include="Content\Images\Brave\ui\45.png" />
+    <Content Include="Content\Images\Brave\ui\46.png" />
+    <Content Include="Content\Images\Brave\ui\47.png" />
+    <Content Include="Content\Images\Brave\ui\48.png" />
+    <Content Include="Content\Images\Brave\ui\49.png" />
+    <Content Include="Content\Images\Brave\ui\5.png" />
+    <Content Include="Content\Images\Brave\ui\50.png" />
+    <Content Include="Content\Images\Brave\ui\6.png" />
+    <Content Include="Content\Images\Brave\ui\7.png" />
+    <Content Include="Content\Images\Brave\ui\8.png" />
+    <Content Include="Content\Images\Brave\ui\9.png" />
+    <Content Include="Content\Images\Brave\user\1.jpg" />
+    <Content Include="Content\Images\Brave\user\11.jpg" />
+    <Content Include="Content\Images\Brave\user\12.jpg" />
+    <Content Include="Content\Images\Brave\user\13.jpg" />
+    <Content Include="Content\Images\Brave\user\14.jpg" />
+    <Content Include="Content\Images\Brave\user\2.jpg" />
+    <Content Include="Content\Images\Brave\user\3.jpg" />
+    <Content Include="Content\Images\Brave\user\4.jpg" />
+    <Content Include="Content\Images\Brave\wedding\border.png" />
+    <Content Include="Content\Images\Brave\wedding\crown-down.png" />
+    <Content Include="Content\Images\Brave\wedding\crown-up.png" />
+    <Content Include="Content\Images\Brave\wedding\crown-white-down.png" />
+    <Content Include="Content\Images\Brave\wedding\crown-white-up.png" />
+    <Content Include="Content\Images\Brave\wedding\gallery\1.jpg" />
+    <Content Include="Content\Images\Brave\wedding\gallery\2.jpg" />
+    <Content Include="Content\Images\Brave\wedding\gallery\3.jpg" />
+    <Content Include="Content\Images\Brave\wedding\gallery\4.jpg" />
+    <Content Include="Content\Images\Brave\wedding\gallery\5.jpg" />
+    <Content Include="Content\Images\Brave\wedding\gallery\6.jpg" />
+    <Content Include="Content\Images\Brave\wedding\gallery\7.jpg" />
+    <Content Include="Content\Images\Brave\wedding\gallery\8.jpg" />
+    <Content Include="Content\Images\Brave\wedding\hearting.png" />
+    <Content Include="Content\Images\Brave\wedding\overlay.png" />
+    <Content Include="Content\Images\Brave\wedding\raster.png" />
+    <Content Include="Content\Images\Brave\wedding\rsvp.png" />
+    <Content Include="Content\Images\Brave\wedding\user-1.jpg" />
+    <Content Include="Content\Images\Brave\wedding\user-2.jpg" />
+    <Content Include="Content\Images\Brave\work\big\1.jpg" />
+    <Content Include="Content\Images\Brave\work\big\10.jpg" />
+    <Content Include="Content\Images\Brave\work\big\2.jpg" />
+    <Content Include="Content\Images\Brave\work\big\3.jpg" />
+    <Content Include="Content\Images\Brave\work\big\4.jpg" />
+    <Content Include="Content\Images\Brave\work\big\5.jpg" />
+    <Content Include="Content\Images\Brave\work\big\6.jpg" />
+    <Content Include="Content\Images\Brave\work\big\7.jpg" />
+    <Content Include="Content\Images\Brave\work\big\8.jpg" />
+    <Content Include="Content\Images\Brave\work\big\9.jpg" />
+    <Content Include="Content\Images\Brave\work\small\1.jpg" />
+    <Content Include="Content\Images\Brave\work\small\10.jpg" />
+    <Content Include="Content\Images\Brave\work\small\2.jpg" />
+    <Content Include="Content\Images\Brave\work\small\3.jpg" />
+    <Content Include="Content\Images\Brave\work\small\4.jpg" />
+    <Content Include="Content\Images\Brave\work\small\5.jpg" />
+    <Content Include="Content\Images\Brave\work\small\6.jpg" />
+    <Content Include="Content\Images\Brave\work\small\7.jpg" />
+    <Content Include="Content\Images\Brave\work\small\8.jpg" />
+    <Content Include="Content\Images\Brave\work\small\9.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\Attack Of 50-Foot Woman.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\BadScienceInMovies.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\BillGates1985.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\CaptainKirkPublicity.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\ChiTrovaUnAmicoTrovaUnTesoro.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\CommandoLibya.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\CrichtonAmazon.png" />
+    <Content Include="Content\Images\ImagesIPicked\EmpireStrikesBackCartoon.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\ErnestHemingway.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\Fallacies.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\GalaxyQuest.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\GeeksNerds.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\GhostBusters.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\GoodOldDonkeyKong.png" />
+    <Content Include="Content\Images\ImagesIPicked\GoodOldPirates.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\HowCoffeeWorks.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\img001 b.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\MoviesWhileCoding.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\MyFavoriteStrategyGames.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\OtherWaysToSay.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\PlanAhead.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\RulesOfTheGameMonopoly.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\SomeDay.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\TheLostWorld.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\ThingsOCDPeopleWorryAbout.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\WhenICompareMyself.jpg" />
+    <Content Include="Content\Images\ImagesIPicked\YouCanOnlyPickTwo.jpg" />
+    <Content Include="Content\Images\MyFavoriteSites\ASoftMurmur.png" />
+    <Content Include="Content\Images\MyFavoriteSites\Sputnik.png" />
+    <Content Include="Content\Images\MyFavoriteSites\TheIndependent.png" />
+    <Content Include="Content\Images\MyFavoriteSites\WowTurkey.jpg" />
+    <Content Include="Content\Images\NoImage.jpg" />
+    <Content Include="Content\Images\ornament2.gif" />
+    <Content Include="Content\Images\ornament2up.gif" />
+    <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\Bordeaux-800x300.jpg" />
+    <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\Bordeaux-809x599.jpg" />
+    <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\Bursaspor_1979-80.jpg" />
+    <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\Ingiltere_8-0.jpg" />
+    <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\KenanEvren_Ankaragucu.jpg" />
+    <Content Include="Content\Images\Tales\BizimZamanlarimiz\HuckFinn-800x400.jpg" />
+    <Content Include="Content\Images\Tales\BizimZamanlarimiz\KenanEvrenZonguldak.jpg" />
+    <Content Include="Content\Images\Tales\Boncuk\302s-drawing-800x300.jpg" />
+    <Content Include="Content\Images\Tales\Boncuk\302s-drawing-large.jpg" />
+    <Content Include="Content\Images\Tales\Boncuk\ankara-terminali.jpg" />
+    <Content Include="Content\Images\Tales\Boncuk\DorukhanTuneli.jpg" />
+    <Content Include="Content\Images\Tales\Boncuk\GuvenBilet.jpg" />
+    <Content Include="Content\Images\Tales\Boncuk\GuvenBilet2.jpg" />
+    <Content Include="Content\Images\Tales\Boncuk\kemal-sunal-guven.jpg" />
+    <Content Include="Content\Images\Tales\Boncuk\KorkusuzKorkakO302.jpg" />
+    <Content Include="Content\Images\Tales\Boncuk\Mercedes302s1968.jpg" />
+    <Content Include="Content\Images\Tales\Boncuk\Mercedes302s600x300.jpg" />
+    <Content Include="Content\Images\Tales\Boncuk\Mercedes302s800x300.jpg" />
+    <Content Include="Content\Images\Tales\Boncuk\Mercedes302sBlue.jpg" />
+    <Content Include="Content\Images\Tales\Boncuk\Pamukkale.jpg" />
+    <Content Include="Content\Images\Tales\Boncuk\ZonguldakTerminalinde.jpg" />
+    <Content Include="Content\Images\Tales\TeksasTommiks\Fenerbahce1980.jpg" />
+    <Content Include="Content\Images\Tales\TeksasTommiks\Teksas600x300.jpg" />
+    <Content Include="Content\Images\Tales\TeksasTommiks\Teksas800x300.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldakspor\HaftaninTakimiZonguldak1982.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldakspor\LiderZonguldakH23.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldakspor\YilinKadrosu-1979-1980.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldakspor\Zonguldak1980Ikinci.png" />
+    <Content Include="Content\Images\Tales\Zonguldak\BuyukMadenciYuruyusu.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldak\Catalagzi1977.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldak\FenerVeMuhendislerCemiyeti.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldak\MuhendislerCemiyeti.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldak\TestDrive.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldak\Zonguldak1977-800x300.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldak\Zonguldak1977.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldak\ZonguldakEskiHarita.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldak\ZonguldakMyNeighborhood.jpg" />
+    <Content Include="Content\magnific-popup.css" />
+    <Content Include="Content\owl.carousel.css" />
+    <Content Include="Content\parallax-slider.css" />
+    <Content Include="Content\settings.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\smart-addons.css" />
+    <Content Include="Content\smart-forms-ie8.css" />
+    <Content Include="Content\smart-forms.css" />
+    <Content Include="Content\styles\app-site.css" />
+    <Content Include="Content\styles\background-image.css" />
+    <Content Include="Content\styles\comingsoon.css" />
+    <Content Include="Content\styles\ecommerce.css" />
+    <Content Include="Content\styles\index-slim.css" />
+    <Content Include="Content\styles\letterhead.css" />
+    <Content Include="Content\styles\medical.css" />
+    <Content Include="Content\styles\non-profit.css" />
+    <Content Include="Content\styles\parallax.css" />
+    <Content Include="Content\styles\portfolio.css" />
+    <Content Include="Content\styles\real-estate.css" />
+    <Content Include="Content\styles\restaurant.css" />
+    <Content Include="Content\styles\resume.css" />
+    <Content Include="Content\styles\skin-black.css" />
+    <Content Include="Content\styles\skin-blue.css" />
+    <Content Include="Content\styles\skin-brown.css" />
+    <Content Include="Content\styles\skin-green.css" />
+    <Content Include="Content\styles\skin-lblue.css" />
+    <Content Include="Content\styles\skin-less.css" />
+    <Content Include="Content\styles\skin-orange.css" />
+    <Content Include="Content\styles\skin-purple.css" />
+    <Content Include="Content\styles\skin-red.css" />
+    <Content Include="Content\styles\skin-rose.css" />
+    <Content Include="Content\styles\skin-yellow.css" />
+    <Content Include="Content\styles\status.css" />
+    <Content Include="Content\styles\style-26.css" />
+    <Content Include="Content\styles\style.css" />
+    <Content Include="Content\styles\vcard.css" />
+    <Content Include="Content\styles\wedding.css" />
+    <Content Include="Content\summernote.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\revicons.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\revicons.eot" />
+    <Content Include="fonts\revicons.ttf" />
+    <Content Include="fonts\revicons.woff" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\custom.js" />
+    <Content Include="Scripts\ecommerce.js" />
+    <Content Include="Scripts\excanvas.js" />
+    <Content Include="Scripts\form-additional-methods.js" />
+    <Content Include="Scripts\html5shiv.js" />
+    <Content Include="Scripts\imagesloaded.min.js" />
+    <Content Include="Scripts\isotope.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Scripts\jquery-ui-1.10.4.custom.min.js" />
+    <Content Include="Scripts\jquery-ui-monthpicker.min.js" />
+    <Content Include="Scripts\jquery-ui-timepicker.min.js" />
+    <Content Include="Scripts\jquery-ui-touch-punch.min.js" />
+    <Content Include="Scripts\jquery.arbitrary-anchor.js" />
+    <Content Include="Scripts\jquery.countdown.min.js" />
+    <Content Include="Scripts\jquery.countTo.js" />
+    <Content Include="Scripts\jquery.cslider.js" />
+    <Content Include="Scripts\jquery.gmap.min.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.knob.js" />
+    <Content Include="Scripts\jquery.magnific-popup.min.js" />
+    <Content Include="Scripts\jquery.maskedinput.js" />
+    <Content Include="Scripts\jquery.spectrum.min.js" />
+    <Content Include="Scripts\jquery.stepper.min.js" />
+    <Content Include="Scripts\jquery.sticky.js" />
+    <Content Include="Scripts\jquery.themepunch.revolution.js" />
+    <Content Include="Scripts\jquery.themepunch.revolution.min.js" />
+    <Content Include="Scripts\jquery.themepunch.tools.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\masonry.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\modernizr.custom.28468.js" />
+    <Content Include="Scripts\owl.carousel.min.js" />
+    <Content Include="Scripts\placeholders.js" />
+    <Content Include="Scripts\real-estate.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\summernote.js" />
+    <Content Include="Scripts\summernote.min.js" />
+    <Content Include="Scripts\support-filter.js" />
+    <Content Include="Scripts\waypoints.min.js" />
+    <None Include="Scripts\_references.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\ParCommentForm.cshtml" />
+    <Content Include="Views\Home\ParRecentImages.cshtml" />
+    <Content Include="Views\Home\ParSearch.cshtml" />
+    <Content Include="Views\Home\ParShareArticle.cshtml" />
+    <Content Include="Views\Tales\TeksasTommiks.cshtml" />
+    <Content Include="Views\Home\ParAuthor.cshtml" />
+    <Content Include="Views\Tales\Boncuk.cshtml" />
+    <Content Include="Views\Tales\BizimZamanlarimiz.cshtml" />
+    <Content Include="Views\Tales\Zonguldak.cshtml" />
+    <Content Include="Views\Tales\BirZamanlarTurkFutbolu.cshtml" />
+    <Content Include="Views\Tales\BagdatCaddesi.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\Images\Tales\BagdatCaddesi\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52545</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52545/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

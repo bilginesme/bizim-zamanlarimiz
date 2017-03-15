@@ -1,0 +1,354 @@
+﻿@{ ViewBag.Title = "Home"; }
+
+<div class="main-block">
+    <div class="magazine">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <!-- Bootstrap carousel usage
+                        Bootstrap carousel should have id. Below i am using "bs-carousel-X". Where "X" denotes number". If a page has more than 1 carousel, then add the new carousel with the id "bs-carousel-1", "bs-carousel-2". You also need to update the id in, "carousel indicators" section and "carousel control" section.
+
+                        Carousel comes with 3 main data attributes which you can customize. They are...
+                        data-interval - Time delay between item cycle. Default value "5000".
+                        data-pause - Pause on hover. Default value "pause".
+                        data-wrap - Continues cycle or stop at the end. Default value "true".
+                    -->
+                    <!-- CAROUSEL Outer layer -->
+                    <div id="bs-carousel-1" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover" data-wrap="true">
+                        <ol class="carousel-indicators">
+                            <li data-target="#bs-carousel-1" data-slide-to="0" class="active"></li>
+                            <li data-target="#bs-carousel-1" data-slide-to="1"></li>
+                            <li data-target="#bs-carousel-1" data-slide-to="2"></li>
+                            <li data-target="#bs-carousel-1" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="~/Content/Images/Tales/TeksasTommiks/Teksas800x300.jpg" alt="Teksak Tommiks">
+                                <div class="carousel-caption c-right-big">
+                                    <h4>@Html.ActionLink("Teksas Tommiks Yanılsaması", "TeksasTommiks", "Tales")</h4>
+                                    <p>Kırılgan güzelliklere bir özür borcu</p>
+                                </div>
+                            </div><!-- Teksas Tommiks -->
+                            <div class="item">
+                                <img src="~/Content/Images/Tales/Boncuk/302s-drawing-800x300.jpg" alt="Boncuk - Hızlı ve öfkesiz">
+                                <div class="carousel-caption c-right-big">
+                                    <h4>@Html.ActionLink("Boncuk", "Boncuk", "Tales")</h4>
+                                    <p>Hızlı ve öfkesiz.</p>
+                                </div>
+                            </div><!-- Boncuk -->
+                            <div class="item">
+                                <img src="~/Content/Images/Tales/Zonguldak/Zonguldak1977-800x300.jpg" alt="Zonguldak - 1977">
+                                <div class="carousel-caption c-right-big">
+                                    <h4>@Html.ActionLink("Zonguldak", "Zonguldak", "Tales")</h4>
+                                    <p>Bir zamanlar, bir Cumhuriyet kenti...</p>
+                                </div>
+                            </div><!-- Zonguldak -->
+                            <div class="item">
+                                <img src="~/Content/Images/Tales/BirZamanlarTurkFutbolu/Bordeaux-800x300.jpg" alt="Bir Zamanlar Türk Futbolu">
+                                <div class="carousel-caption c-right-big">
+                                    <h4>@Html.ActionLink("Bir Zamanlar Türk Futbolu", "BirZamanlarTurkFutbolu", "Tales")</h4>
+                                    <p>Çamur içindeki stadlarda, çok daha temiz bir futbol oynanırdı.</p>
+                                </div>
+                            </div><!-- Bir Zamanlar Türk Futbolu -->
+                        </div>
+                        <a class="left carousel-control" href="#bs-carousel-1" role="button" data-slide="prev"><span class="fa fa-chevron-left fa-2x"></span></a>
+                        <a class="right carousel-control" href="#bs-carousel-1" role="button" data-slide="next"><span class="fa fa-chevron-right fa-2x"></span></a>
+                    </div><!-- CAROUSEL -->
+                    <br />
+                    
+                    <div class="row">
+                        <div class="col-md-12"><h4 class="mag-head"><i class="fa fa-user color"></i> YENİLER</h4></div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="magazine-item mag-1">
+                                <a href="@Url.Action("TeksasTommiks", "Tales")">
+                                    <img src="@Url.Content("~/Content/Images/Tales/TeksasTommiks/Teksas600x300.jpg")" class="img-responsive" alt="Scale del Vomero - Naples" />
+                                </a>
+                                <h4>@Html.ActionLink("Teksas-Tommiks Yanılsaması", "TeksasTommiks", "Tales")</h4>
+                                <div class="magazine-meta"><i class="fa fa-calendar"></i> Şub 2016</div>
+                                <p>
+                                    Kırılgan güzelliklere bir özür borcu
+                                </p>
+                            </div>
+                        </div><!-- Teksas Tommiks -->
+                        <div class="col-md-6 col-sm-6">
+                            <div class="magazine-item mag-1">
+                                <a href="@Url.Action("Boncuk", "Tales")">
+                                    <img src="@Url.Content("~/Content/Images/Tales/Boncuk/Mercedes302s600x300.jpg")" class="img-responsive" alt="Scale del Vomero - Naples" />
+                                </a>
+                                <h4>@Html.ActionLink("Boncuk", "Boncuk", "Tales")</h4>
+                                <div class="magazine-meta"><i class="fa fa-calendar"></i> Mar 2016</div>
+                                <p>
+                                    Hızlı ve öfkesiz
+                                </p>
+                            </div>
+                        </div><!-- Boncuk -->
+                    </div><!-- WHAT'S NEW? -->
+                    
+                    <div class="row">
+                        <div class="col-md-12"><h4 class="mag-head"><i class="fa fa-user color"></i> FEATURED</h4></div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="magazine-item mag-1">
+                                <a href="@Url.Action("TeksasTommiks", "Tales")">
+                                    <img src="@Url.Content("~/Content/Images/Tales/TeksasTommiks/Teksas600x300.jpg")" class="img-responsive" alt="A simple reduction of Kalman Filter equations" />
+                                </a>
+                                <h4>@Html.ActionLink("Teksas-Tommiks Yanılsaması", "TeksasTommiks", "Tales")</h4>
+                                <div class="magazine-meta"><i class="fa fa-calendar"></i> Şub 2016</div>
+                                <p>Kırılgan güzelliklere bir özür borcu</p>
+                            </div>
+                        </div><!-- Teksas-Tommiks Yanılsaması -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="magazine-item mag-1">
+                                <a href="@Url.Action("Boncuk", "Tales")">
+                                    <img src="@Url.Content("~/Content/Images/Tales/Boncuk/Mercedes302s600x300.jpg")" class="img-responsive" alt="Byzantine Vineyard" />
+                                </a>
+                                <h4>@Html.ActionLink("Boncuk", "Boncuk", "Tales")</h4>
+                                <div class="magazine-meta"><i class="fa fa-calendar"></i> Mar 2016</div>
+                                <p>Hızlı ve öfkesiz</p>
+                            </div>
+                        </div><!-- Boncuk -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="magazine-item mag-1">
+                                <a href="@Url.Action("Zonguldak", "Tales")">
+                                    <img src="@Url.Content("~/Content/Images/Tales/Zonguldak/Zonguldak1977.jpg")" class="img-responsive" alt="Caddebostan - Istanbul" />
+                                </a>
+                                <h4>@Html.ActionLink("Zonguldak", "Zonguldak", "Tales")</h4>
+                                <div class="magazine-meta"><i class="fa fa-calendar"></i> Nis 2016</div>
+                                <p>Bir zamanlar, bir Cumhuriyet kenti...</p>
+                            </div>
+                        </div><!-- Zonguldak -->
+
+                        <div class="col-md-12">
+                            <div class="magazine-item mag-2">
+                                <a href="@Url.Action("BirZamanlarTurkFutbolu", "Tales")">
+                                    <img src="@Url.Content("~/Content/Images/Tales/BirZamanlarTurkFutbolu/Bordeaux-800x400.jpg")" class="img-responsive" alt="Bir Zamanlar Türk Futbolu" />
+                                </a>
+                                <div class="mag-2-content">
+                                    <h4>@Html.ActionLink("Bir Zamanlar Türk Futbolu", "BirZamanlarTurkFutbolu", "Tales")</h4>
+                                    <div class="magazine-meta"><i class="fa fa-calendar"></i> May 2016</div>
+                                    <p>
+                                        Çamur içindeki stadlarda, çok daha temiz bir futbol oynanırdı.
+                                    </p>
+                                </div>
+                            </div><!-- Bir Zamanlar Türk Futbolu -->
+                        </div>
+                        <div class="col-md-12">
+                            <div class="magazine-item mag-2">
+                                <a href="@Url.Action("BagdatCaddesi", "Tales")">
+                                    <img src="@Url.Content("~/Content/Images/Tales/BirZamanlarTurkFutbolu/Bordeaux-800x400.jpg")" class="img-responsive" alt="Bağdat Caddesi'ne Ağıt" />
+                                </a>
+                                <div class="mag-2-content">
+                                    <h4>@Html.ActionLink("Bağdat Caddesi'ne Ağıt", "BagdatCaddesi", "Tales")</h4>
+                                    <div class="magazine-meta"><i class="fa fa-calendar"></i> Şub 2017</div>
+                                    <p>
+                                        ya da mahallelerimizi nasıl kaybettik?
+                                    </p>
+                                </div>
+                            </div><!-- Bağdat Caddesi'ne Ağıt -->
+                        </div>
+                    </div><!-- FEATURED -->
+                    <hr />
+
+                    <div class="row hidden">
+                        <div class="col-md-12"><h4 class="mag-head"><i class="fa fa-comments color"></i> Other Articles</h4></div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="magazine-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="@Url.Action("Rembetika", "Tales")">
+                                            <img src="@Url.Content("~/Content/Images/Tales/Rembetika/rembetes_from_1925.jpg")" class="img-responsive" alt="Rembetes from 1925" />
+                                        </a>
+                                        <div class="m-list-content">
+                                            <h5>@Html.ActionLink("Rembetika", "Rembetika", "Tales")</h5>
+                                            <small>Songs of Unspoken Sorrow</small>
+                                            <div class="magazine-meta"><i class="fa fa-calendar"></i> Mar 2008</div>
+                                        </div>
+                                    </li><!-- Rembetika -->
+                                    <li>
+                                        <a href="@Url.Action("MyVillage", "Tales")">
+                                            <img src="@Url.Content("~/Content/Images/Tales/MyVillage/MyVillage-600x300.jpg")" class="img-responsive" alt="An old photo from my village" />
+                                        </a>
+                                        <div class="m-list-content">
+                                            <h5>@Html.ActionLink("My Village", "MyVillage", "Tales")</h5>
+                                            <small>The Village of my Father and Grandfathers</small>
+                                            <div class="magazine-meta"><i class="fa fa-calendar"></i> May 2013</div>
+                                        </div>
+                                    </li><!-- My Village -->
+                                    <li>
+                                        <a href="@Url.Action("VolcanoIsland", "BitsAndBytes")">
+                                            <img src="@Url.Content("~/Content/Images/BitsAndBytes/VolcanoIsland/IslandsBanana.jpg")" class="img-responsive" alt="Volcano Island" />
+                                        </a>
+                                        <div class="m-list-content">
+                                            <h5>@Html.ActionLink("Volcano Island", "VolcanoIsland", "BitsAndBytes")</h5>
+                                            <small>A little bit of sea breeze and lots of fun</small>
+                                            <div class="magazine-meta"><i class="fa fa-calendar"></i> Mar 2010</div>
+                                        </div>
+                                    </li><!-- Volcano Island -->
+                                </ul>
+                            </div><!-- Magazine list -->
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="magazine-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="@Url.Action("BagdatCaddesi", "Tales")">
+                                            <img src="@Url.Content("~/Content/Images/Tales/BagdatCaddesi/BagdatCaddesi.jpg")" class="img-responsive" alt="A lively photo from Bagdat Caddesi" />
+                                        </a>
+                                        <div class="m-list-content">
+                                            <h5>@Html.ActionLink("Bagdat Caddesi", "BagdatCaddesi", "Tales")</h5>
+                                            <small>Where the Heart of Modern Istanbul Beats</small>
+                                            <div class="magazine-meta"><i class="fa fa-calendar"></i> July 2011</div>
+                                        </div>
+                                    </li><!-- Bagdat Caddesi -->
+                                    <li>
+                                        <a href="@Url.Action("ForHrantDink", "Tales")">
+                                            <img src="@Url.Content("~/Content/Images/Tales/ForHrantDink/agos_staff.jpg")" class="img-responsive" alt="Hrant Dink with Agos Staff" />
+                                        </a>
+                                        <div class="m-list-content">
+                                            <h5>@Html.ActionLink("For Hrant Dink", "ForHrantDink", "Tales")</h5>
+                                            <small>Our best hopes faded with you</small>
+                                            <div class="magazine-meta"><i class="fa fa-calendar"></i> Mar 2008</div>
+                                        </div>
+                                    </li><!-- For Hrant Dink -->
+                                </ul>
+                            </div><!-- Magazine list -->
+                        </div>
+                    </div><!-- Other Articles -->
+                    <br />
+ 
+
+                </div><!-- MAIN COLUMN -->
+
+                <div class="col-md-4">
+                    <div class="sidebar">
+                        <div class="magazine-item mag-1">
+                            <a href="@Url.Action("BizimZamanlarimiz", "Tales")">
+                                <img src="@Url.Content("~/Content/Images/Tales/BizimZamanlarimiz/HuckFinn-800x400.jpg")" class="img-responsive" alt="Huck Finn" />
+                            </a>
+                            <h4>@Html.ActionLink("Bizim Zamanlarımız", "BizimZamanlarimiz", "Tales")</h4>
+                            <div class="magazine-meta"><i class="fa fa-calendar"></i> Sep 2015</div>
+                            <p>
+                                Neden böyle bir blog var?
+                            </p>
+                        </div><!-- THE BOY WHO FAILED TO BE ... -->
+
+                        <div class="divider-4 col-md-12"></div>
+                        <div class="quote-one">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <!-- Quote One Item -->
+                                    <div class="quote-one-item">
+                                        <span class="color">&#8220;</span>
+                                        <div class="quote-one-right">
+                                            <p>
+                                                To live!<br />
+                                                Like a tree alone and free.<br />
+                                                Like a forest in brotherhood
+                                            </p>
+                                            - Nazım Hikmet
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- QUTOE -->
+                        <div class="divider-4 col-md-12"></div>
+
+                        <div class="s-widget">
+                            <div class="widget-content brand-bg text-center">
+                                <a href="https://www.facebook.com/bilginesme" class="facebook"><i class="fa fa-facebook square-5"></i></a>
+                                <a href="https://twitter.com/RubberBoom" class="twitter"><i class="fa fa-twitter square-5"></i></a>
+                                <a href="http://www.linkedin.com/in/bilginesme" class="linkedin"><i class="fa fa-linkedin square-5"></i></a>
+                            </div>
+                        </div><!-- SOCIAL MEDIA WIDGET -->
+
+                        <div class="box-shadow-outer">
+                            <div class="box-shadow-block box-shadow-6 text-center">
+                                <h5>IMPORTANT NOTICE</h5>
+                                <p>
+                                    The blog is in process of renewal. I implemented the new design
+                                    on 28<sup>th</sup> January 2016 and it will take some time to
+                                    implement all the functionality. Sorry for any possible inconveniences.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="divider-4 col-md-12"></div>
+
+                        <div class="s-widget">
+                            <h5><i class="fa fa-table color"></i> Tavsiyelerim</h5>
+                            <div class="widget-content tabs">
+                                <div class="nav-tabs-two">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#popular" data-toggle="tab">Haber</a></li>
+                                        <li><a href="#recent" data-toggle="tab">Kültür-Sanat</a></li>
+                                        <li><a href="#comments" data-toggle="tab">Faydalı Şeyler</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade in active" id="popular">
+                                            <ul>
+                                                <li>
+                                                    <a href="http://sputniknews.com/" target="_blank" title="Sputnik International">
+                                                        <img src="~/Content/Images/MyFavoriteSites/Sputnik.png" alt="Sputnik" class="img-responsive img-thumbnail" />
+                                                        <span>
+                                                            <b>Sputnik</b> is a news portal serves in dozens of languages which
+                                                            naturally gives the Russian point of view, which you don't get from
+                                                            other news sources.
+                                                        </span>
+                                                        <div class="clearfix"></div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="http://www.independent.co.uk/" target="_blank" title="The Independent">
+                                                        <img src="~/Content/Images/MyFavoriteSites/TheIndependent.png" alt="Sputnik" class="img-responsive img-thumbnail" />
+                                                        <span>
+                                                            Just forget the manipulative junkyard BBC. They'll never issue a
+                                                            negative news of countries, that pay enough for advertisements.
+                                                            <b>The Independent</b> is the trustworthy British news source you'll ever need.
+                                                        </span>
+                                                        <div class="clearfix"></div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div><!-- News -->
+                                        <div class="tab-pane fade" id="recent">
+                                            <ul>
+                                                <li>
+                                                    <a href="http://wowturkey.com/" target="_blank" title="wowTurkey">
+                                                        <img src="~/Content/Images/MyFavoriteSites/WowTurkey.jpg" alt="wowTurkey" class="img-responsive img-thumbnail" />
+                                                        <span>
+                                                            <b>wowTurkey</b>, tasarımı 90'lı yıllardan kalmış olsa da, oldukça canlı bir forum ve resim paylaşımı sitesi.
+                                                            Adından da anlaşılacağı üzere, Türkiye'yi ilgilendiren her konuda resim bulmak mümkün. 
+                                                            Yüklenen resimlerin çözünürlüğü düşük olsa da; başka hiçbir yerde bulamayacağınızı düşünecek olursak
+                                                            eşsiz bir kaynak.
+                                                        </span>
+                                                        <div class="clearfix"></div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div><!-- Arts & Culture -->
+                                        <div class="tab-pane fade" id="comments">
+                                            <ul>
+                                                <li>
+                                                    <a href="http://asoftmurmur.com/" target="_blank" title="A Soft Murmur">
+                                                        <img src="~/Content/Images/MyFavoriteSites/ASoftMurmur.png" alt="A Soft Murmur" class="img-responsive img-thumbnail" />
+                                                        <span>
+                                                            <b>A Soft Murmur</b> : Ambient sounds to wash away distraction.
+                                                        </span>
+                                                        <div class="clearfix"></div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div><!-- Useful Stuff -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- My Favorite Sites -->
+
+                        <div class="s-widget">
+                            @Html.Partial("~/Views/Home/ParRecentImages.cshtml")
+                        </div><!-- Images I Liked -->
+                    </div>
+                </div><!-- SIDEBAR COLUMN -->
+            </div>
+        </div>
+    </div>
+</div>
