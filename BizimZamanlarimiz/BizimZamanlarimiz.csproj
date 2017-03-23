@@ -586,9 +586,8 @@
     <Content Include="Content\Images\ImagesIPicked\ThingsOCDPeopleWorryAbout.jpg" />
     <Content Include="Content\Images\ImagesIPicked\WhenICompareMyself.jpg" />
     <Content Include="Content\Images\ImagesIPicked\YouCanOnlyPickTwo.jpg" />
-    <Content Include="Content\Images\MyFavoriteSites\ASoftMurmur.png" />
-    <Content Include="Content\Images\MyFavoriteSites\Sputnik.png" />
-    <Content Include="Content\Images\MyFavoriteSites\TheIndependent.png" />
+    <Content Include="Content\Images\MyFavoriteSites\Agos.png" />
+    <Content Include="Content\Images\MyFavoriteSites\SendikaOrg.png" />
     <Content Include="Content\Images\MyFavoriteSites\WowTurkey.jpg" />
     <Content Include="Content\Images\NoImage.jpg" />
     <Content Include="Content\Images\ornament2.gif" />
