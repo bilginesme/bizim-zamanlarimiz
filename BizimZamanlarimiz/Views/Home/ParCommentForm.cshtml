@@ -1,35 +1,54 @@
-﻿@{
+﻿@using Recaptcha.Web.Mvc;
+@{
     ViewBag.Title = "";
 }
 
-<div class="well hidden">
-    <!-- Heading -->
-    <h4><i class="fa fa-comments color"></i>&nbsp; Post Comment</h4><!-- Form -->
-    <hr />
-    <form class="form" role="form">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter Name">
+<div class="well hiddenx">
+    <div id="divResults">
+        <h4><i class="fa fa-comments color"></i>&nbsp; Yorum Yaz</h4><!-- Form -->
+        <hr />
+        @using (Ajax.BeginForm("_ParCommentFormSave", "Home",
+                                    new { strArticleName = "article name", saveToDB = true },
+                                    new AjaxOptions
+                                    {
+                                        HttpMethod = "POST",
+                                        InsertionMode = InsertionMode.Replace,
+                                        UpdateTargetId = "divResults",
+                                        LoadingElementId = "divSendingMessage",
+                                        OnSuccess = ""
+                                    }, new { @id = "frmSendMessage" }))
+        {
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <input type="text" name="txtNameSurname" class="form-control" placeholder="Enter Name">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <input type="text" name="txtEmail" class="form-control" placeholder="Enter Email">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter Website">
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter Email">
-                </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="7" name="txtMessage" placeholder="Enter Message"></textarea>
             </div>
-            <div class="col-md-4">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter Website">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <textarea class="form-control" rows="7" placeholder="Enter Message"></textarea>
-        </div>
-        <!-- Button -->
-        <button type="button" class="btn btn-color">Submit</button>&nbsp;
-        <button type="button" class="btn btn-white">Reset</button>
-    </form>
-</div>
+            <div class="form-group">@Html.Recaptcha()</div>
 
+            <div class="form-group">
+                <button type="submit" class="btn btn-color">Submit</button>
+                <button type="button" class="btn btn-white">Reset</button>
+                <span id="divSendingMessage" hidden="hidden" class="text-muted pull-left" style="margin-top:4px">
+                    <i class="fa fa-circle-o-notch fa-spin orange fa-2x" style="color:orange"></i>
+                    &nbsp;&nbsp;
+                </span>
+            </div>
+        }
+    </div>
+
+</div>

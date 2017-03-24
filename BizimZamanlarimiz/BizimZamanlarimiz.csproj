@@ -49,6 +49,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Recaptcha.Web, Version=2.1.0.0, Culture=neutral, PublicKeyToken=171a6ec5fa4b1644, processorArchitecture=MSIL">
+      <HintPath>..\packages\RecaptchaNet.2.1.0\lib\net451\Recaptcha.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -587,6 +591,7 @@
     <Content Include="Content\Images\ImagesIPicked\WhenICompareMyself.jpg" />
     <Content Include="Content\Images\ImagesIPicked\YouCanOnlyPickTwo.jpg" />
     <Content Include="Content\Images\MyFavoriteSites\Agos.png" />
+    <Content Include="Content\Images\MyFavoriteSites\K24.png" />
     <Content Include="Content\Images\MyFavoriteSites\SendikaOrg.png" />
     <Content Include="Content\Images\MyFavoriteSites\WowTurkey.jpg" />
     <Content Include="Content\Images\NoImage.jpg" />
@@ -742,6 +747,7 @@
     <Content Include="fonts\revicons.eot" />
     <Content Include="fonts\revicons.ttf" />
     <Content Include="fonts\revicons.woff" />
+    <Content Include="RecaptchaNet.Readme.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\custom.js" />
@@ -773,6 +779,8 @@
     <Content Include="Scripts\jquery.themepunch.revolution.js" />
     <Content Include="Scripts\jquery.themepunch.revolution.min.js" />
     <Content Include="Scripts\jquery.themepunch.tools.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -836,6 +844,7 @@
     <Content Include="Views\Tales\Zonguldak.cshtml" />
     <Content Include="Views\Tales\BirZamanlarTurkFutbolu.cshtml" />
     <Content Include="Views\Tales\BagdatCaddesi.cshtml" />
+    <Content Include="Views\Home\_ParCommentFormSave.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
