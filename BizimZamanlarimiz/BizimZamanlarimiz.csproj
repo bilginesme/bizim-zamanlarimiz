@@ -592,6 +592,7 @@
     <Content Include="Content\Images\ImagesIPicked\YouCanOnlyPickTwo.jpg" />
     <Content Include="Content\Images\MyFavoriteSites\Agos.png" />
     <Content Include="Content\Images\MyFavoriteSites\K24.png" />
+    <Content Include="Content\Images\MyFavoriteSites\Lemon64.jpg" />
     <Content Include="Content\Images\MyFavoriteSites\SendikaOrg.png" />
     <Content Include="Content\Images\MyFavoriteSites\WowTurkey.jpg" />
     <Content Include="Content\Images\NoImage.jpg" />
