@@ -17,7 +17,7 @@
     <AssemblyName>BenimZamanlarim</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -697,8 +697,12 @@
     <Content Include="Content\Images\Tales\Zonguldak\uzun-mehmet-thumb.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\uzun-mehmet.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\zonguldak-1970ler.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldak\zonguldak-balkayasi-thumb.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldak\zonguldak-balkayasi.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\zonguldak-buyuk-madenci-yuruyusu-birol-uzmez-thumb.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\zonguldak-buyuk-madenci-yuruyusu-birol-uzmez.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldak\zonguldak-deniz-kulübü-1980-thumb.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldak\zonguldak-deniz-kulübü-1980.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\Zonguldak1977-800x300.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\Zonguldak1977.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\ZonguldakEskiHarita.jpg" />
@@ -883,7 +887,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>52545</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:52545/</IISUrl>
+          <IISUrl>http://localhost:1977</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
