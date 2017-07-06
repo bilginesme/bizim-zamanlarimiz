@@ -697,6 +697,8 @@
     <Content Include="Content\Images\Tales\Zonguldak\uzun-mehmet-thumb.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\uzun-mehmet.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\zonguldak-1970ler.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldak\zonguldak-80ler-thumb.png" />
+    <Content Include="Content\Images\Tales\Zonguldak\zonguldak-80ler.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\zonguldak-balkayasi-thumb.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\zonguldak-balkayasi.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\zonguldak-buyuk-madenci-yuruyusu-birol-uzmez-thumb.jpg" />
