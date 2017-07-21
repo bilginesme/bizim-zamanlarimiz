@@ -692,6 +692,8 @@
     <Content Include="Content\Images\Tales\Zonguldak\fevkani-koprusu-60lar.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\kurucasile-1972-thumb.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\kurucasile-1972.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldak\merkez-lavuar-thumb.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldak\merkez-lavuar.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\MuhendislerCemiyeti.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\TestDrive.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\uzun-mehmet-thumb.jpg" />
@@ -709,6 +711,8 @@
     <Content Include="Content\Images\Tales\Zonguldak\zonguldak-deniz-kulübü-1980.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\zonguldak-kapuz-1970-thumb.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\zonguldak-kapuz-1970.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldak\zonguldak-liman-thumb.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldak\zonguldak-liman.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\Zonguldak1977-800x300.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\Zonguldak1977.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\ZonguldakEskiHarita.jpg" />
