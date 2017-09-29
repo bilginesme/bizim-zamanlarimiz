@@ -667,6 +667,7 @@
     <Content Include="Content\Images\Tales\Boncuk\302s-drawing-800x300.jpg" />
     <Content Include="Content\Images\Tales\Boncuk\302s-drawing-large.jpg" />
     <Content Include="Content\Images\Tales\Boncuk\ankara-terminali.jpg" />
+    <Content Include="Content\Images\Tales\Boncuk\dorukhan-tuneli-800x300.jpg" />
     <Content Include="Content\Images\Tales\Boncuk\dorukhan-tuneli.jpg" />
     <Content Include="Content\Images\Tales\Boncuk\guven-bilet.jpg" />
     <Content Include="Content\Images\Tales\Boncuk\guven-bilet-2.jpg" />
@@ -705,6 +706,8 @@
     <Content Include="Content\Images\Tales\Zonguldak\zonguldak-1983-son-resim.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\zonguldak-80ler-thumb.png" />
     <Content Include="Content\Images\Tales\Zonguldak\zonguldak-80ler.jpg" />
+    <Content Include="Content\Images\Tales\Zonguldak\zonguldak-akademi.-thumb.png" />
+    <Content Include="Content\Images\Tales\Zonguldak\zonguldak-akademi.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\zonguldak-balkayasi-thumb.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\zonguldak-balkayasi.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\zonguldak-buyuk-madenci-yuruyusu-birol-uzmez-thumb.jpg" />
@@ -720,7 +723,6 @@
     <Content Include="Content\Images\Tales\Zonguldak\Zonguldak1977-800x300.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\Zonguldak1977.jpg" />
     <Content Include="Content\Images\Tales\Zonguldak\ZonguldakEskiHarita.jpg" />
-    <Content Include="Content\Images\Tales\Zonguldak\ZonguldakMyNeighborhood.jpg" />
     <Content Include="Content\magnific-popup.css" />
     <Content Include="Content\owl.carousel.css" />
     <Content Include="Content\parallax-slider.css" />
