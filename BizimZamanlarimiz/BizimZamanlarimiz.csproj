@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -689,6 +690,8 @@
     <Content Include="Content\Images\Tales\Boncuk\pamukkale.jpg" />
     <Content Include="Content\Images\Tales\Boncuk\topkapi-garaji-thumb.jpg" />
     <Content Include="Content\Images\Tales\Boncuk\topkapi-garaji.jpg" />
+    <Content Include="Content\Images\Tales\Boncuk\varan-bolu-dagi-thumb.jpg" />
+    <Content Include="Content\Images\Tales\Boncuk\varan-bolu-dagi.jpg" />
     <Content Include="Content\Images\Tales\Boncuk\zonguldak-terminali.jpg" />
     <Content Include="Content\Images\Tales\Boncuk\zonguldak-terminalinde.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\Fenerbahce1980.jpg" />
