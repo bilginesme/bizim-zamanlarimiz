@@ -658,8 +658,9 @@
     <Content Include="Content\Images\Tales\BagdatCaddesi\yuvarlak-apartman-thumb.jpg" />
     <Content Include="Content\Images\Tales\BagdatCaddesi\yuvarlak-apartman-ve-bizim-ev-large.jpg" />
     <Content Include="Content\Images\Tales\BagdatCaddesi\yuvarlak-apartman-ve-bizim-ev-thumb.jpg" />
-    <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\Bordeaux-800x300.jpg" />
-    <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\Bordeaux-809x599.jpg" />
+    <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\bordeaux-fenerbahce-800x300.jpg" />
+    <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\bordeaux-fenerbahce-thumb.jpg" />
+    <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\bordeaux-fenerbahce.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\Bursaspor_1979-80.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\fasolig-duvar-yazisi-thumb.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\fasolig-duvar-yazisi.jpg" />
@@ -670,7 +671,7 @@
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\Ingiltere_8-0.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\jupp-derwall-thumb.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\jupp-derwall.jpg" />
-    <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\KenanEvren_Ankaragucu.jpg" />
+    <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\kenan-evren_ankaragucu.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\medipol-basaksehir-teleset-mobilya-akhisar-thumb.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\medipol-basaksehir-teleset-mobilya-akhisar.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\milli-takim-dunya-ucuncusu-thumb.jpg" />
