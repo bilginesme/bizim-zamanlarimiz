@@ -658,6 +658,7 @@
     <Content Include="Content\Images\Tales\BagdatCaddesi\yuvarlak-apartman-thumb.jpg" />
     <Content Include="Content\Images\Tales\BagdatCaddesi\yuvarlak-apartman-ve-bizim-ev-large.jpg" />
     <Content Include="Content\Images\Tales\BagdatCaddesi\yuvarlak-apartman-ve-bizim-ev-thumb.jpg" />
+    <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\bay-merakli.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\bordeaux-fenerbahce-800x300.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\bordeaux-fenerbahce-thumb.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\bordeaux-fenerbahce.jpg" />
@@ -676,6 +677,8 @@
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\medipol-basaksehir-teleset-mobilya-akhisar.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\milli-takim-dunya-ucuncusu-thumb.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\milli-takim-dunya-ucuncusu.jpg" />
+    <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\studyo-pazar-1986-thumb.jpg" />
+    <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\studyo-pazar-1986.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\trabzonspor-thumb.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\trabzonspor.jpg" />
     <Content Include="Content\Images\Tales\BizimZamanlarimiz\HuckFinn-800x400.jpg" />
