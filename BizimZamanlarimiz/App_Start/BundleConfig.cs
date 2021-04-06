@@ -22,7 +22,6 @@ namespace BenimZamanlarim
 
             bundles.Add(new StyleBundle("~/bundles/css").Include(
                        "~/Content/bootstrap.css",
-                       "~/Content/font-awesome.css",
                        "~/Content/magnific-popup.css",
                        "~/Content/owl.carousel.css",
                        "~/Content/styles/style.css",
@@ -41,7 +40,8 @@ namespace BenimZamanlarim
            "~/Scripts/main.js",
            "~/Scripts/modernizr-2.6.2.js",
            "~/Scripts/jquery.unobtrusive-ajax.min.js",
-           "~/Scripts/custom.js"
+           "~/Scripts/custom.js",
+           "~/Scripts/fontawesome-all.js"
            ));
         }
     }

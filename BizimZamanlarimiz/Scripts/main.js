@@ -45,7 +45,7 @@ $(document).ready(function () {
                 var str = item.el.attr('title');
                 var res = str.split(" - ");
                 
-                return '<span class="text-center center-block"><i class="fa fa-comments-o fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;<span style="font-size:12pt"><b>' + res[0] + '</b></span>  <small>' + res[1] + '</small></span>';
+                return '<span class="text-center center-block"><i class="far fa-comments fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;<span style="font-size:12pt"><b>' + res[0] + '</b></span>  <small>' + res[1] + '</small></span>';
             } 
         }
     });
@@ -75,7 +75,7 @@ $(document).ready(function () {
             titleSrc: function (item) {
                 var str = item.el.attr('title');
                 var res = str.split(" - ");
-                return '<br><span class="text-center center-block"><i class="fa fa-comments-o fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;<span style="font-size:12pt"><b>' + res[0] + '</b></span><br><small>' + res[1] + '</small></span>';
+                return '<br><span class="text-center center-block"><i class="far fa-comments fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;<span style="font-size:12pt"><b>' + res[0] + '</b></span><br><small>' + res[1] + '</small></span>';
             }
         }
     });
