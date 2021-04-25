@@ -26,7 +26,9 @@ namespace BenimZamanlarim
                        "~/Content/owl.carousel.css",
                        "~/Content/styles/style.css",
                        "~/Content/styles/skin-lblue.css",
-                       "~/Content/custom.css"));
+                       "~/Content/custom.css",
+                       "~/Content/all.css"
+                       ));
 
             bundles.Add(new ScriptBundle("~/bundles/scripts").Include(
            "~/Scripts/jquery.js",
@@ -41,7 +43,7 @@ namespace BenimZamanlarim
            "~/Scripts/modernizr-2.6.2.js",
            "~/Scripts/jquery.unobtrusive-ajax.min.js",
            "~/Scripts/custom.js",
-           "~/Scripts/fontawesome-all.js"
+           "~/Scripts/all.js"
            ));
         }
     }

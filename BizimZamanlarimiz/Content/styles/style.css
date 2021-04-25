@@ -1,4 +1,4 @@
-/****************************/
+﻿/****************************/
 /* Theme name  : Brave      */
 /* Author name : Ashok      */
 /****************************/
@@ -280,55 +280,55 @@ blockquote small{
 }
 .list-1 li:before{
 	content: "\f069"; /* Asterisk */
-	font-family: 'FontAwesome';
+	font-family: 'Font Awesome 5 Pro';
 	float: left;
 	margin-left: -20px;
 }
 .list-2 li:before{
 	content: "\f00c"; /* Check */
-	font-family: 'FontAwesome';
+	font-family: 'Font Awesome 5 Pro';
 	float: left;
 	margin-left: -20px;
 }
 .list-3 li:before{
 	content: "\f046"; /* Check-Square-o */
-	font-family: 'FontAwesome';
+	font-family: 'Font Awesome 5 Pro';
 	float: left;
 	margin-left: -20px;
 }
 .list-4 li:before{
 	content: "\f067"; /* Plus */
-	font-family: 'FontAwesome';
+	font-family: 'Font Awesome 5 Pro';
 	float: left;
 	margin-left: -20px;
 }
 .list-5 li:before{
 	content: "\f005"; /* Star */
-	font-family: 'FontAwesome';
+	font-family: 'Font Awesome 5 Pro';
 	float: left;
 	margin-left: -20px;
 }
 .list-6 li:before{
 	content: "\f101"; /* Angle Double Right */
-	font-family: 'FontAwesome';
+	font-family: 'Font Awesome 5 Pro';
 	float: left;
 	margin-left: -20px;
 }
 .list-7 li:before{
 	content: "\f0a4"; /* hand-o-right */
-	font-family: 'FontAwesome';
+	font-family: 'Font Awesome 5 Pro';
 	float: left;
 	margin-left: -20px;
 }
 .list-8 li:before{
 	content: "\f0da"; /* caret-right */
-	font-family: 'FontAwesome';
+	font-family: 'Font Awesome 5 Pro';
 	float: left;
 	margin-left: -20px;
 }
 .list-9 li:before{
 	content: "\f138"; /* chevron-circle-right */
-	font-family: 'FontAwesome';
+	font-family: 'Font Awesome 5 Pro';
 	float: left;
 	margin-left: -20px;
 }
@@ -2308,8 +2308,8 @@ body.boxed.img-5 {
 	color: #fff;
 }
 .header-1 .navy ul > li.has-sub > a:after {
+	font-family: 'Font Awesome 5 Pro';
 	content: "\f107";
-	font-family:"FontAwesome";
 	margin-left:6px;
 	font-weight:400;
 	font-size:14px;
@@ -2355,7 +2355,7 @@ body.boxed.img-5 {
 }
 .header-1 .navy ul ul > li.has-sub > a:after {
 	content: "\f105";
-	font-family:"FontAwesome";
+	font-family:"Font Awesome 5 Pro";
 	margin-left:7px;
 	font-weight:400;
 	float:right;
@@ -2442,7 +2442,7 @@ body.boxed.img-5 {
 	}
 	.header-1 .navy #menu-button:after{
 		content: "\f0c9";
-		font-family:"FontAwesome";
+		font-family:"Font Awesome 5 Pro";
 		margin-left:7px;
 		font-weight:400;
 		float:right;
@@ -2463,7 +2463,7 @@ body.boxed.img-5 {
 	}
 	.header-1 .navy ul .submenu-button:after {
 		content: "\f107";
-		font-family:"FontAwesome";
+		font-family:"Font Awesome 5 Pro";
 		font-weight:400;
 		font-size:14px;
 		line-height:50px;
@@ -2535,7 +2535,7 @@ body.boxed.img-5 {
 }
 .header-2 .navy ul > li.has-sub > a:after {
 	content: "\f107";
-	font-family:"FontAwesome";
+	font-family:"Font Awesome 5 Pro";
 	margin-left:5px;
 	font-weight:400;
 }
@@ -2580,7 +2580,7 @@ body.boxed.img-5 {
 }
 .header-2 .navy ul ul > li.has-sub > a:after {
 	content: "\f105";
-	font-family:"FontAwesome";
+	font-family:"Font Awesome 5 Pro";
 	margin-left:7px;
 	font-weight:400;
 	float:right;
@@ -2656,7 +2656,7 @@ body.boxed.img-5 {
 	}
 	.header-2 .navy #menu-button:after{
 		content: "\f0c9";
-		font-family:"FontAwesome";
+		font-family:"Font Awesome 5 Pro";
 		margin-left:7px;
 		font-weight:400;
 		float:right;
@@ -2677,7 +2677,7 @@ body.boxed.img-5 {
 	}
 	.header-2 .navy ul .submenu-button:after {
 		content: "\f107";
-		font-family:"FontAwesome";
+		font-family:"Font Awesome 5 Pro";
 		font-weight:400;
 		font-size:14px;
 		line-height:50px;
@@ -3462,7 +3462,7 @@ body.boxed.img-5 {
 	color:#777;
 }
 .support .support-filter li a:before{
-	font-family:FontAwesome;
+	font-family:Font Awesome 5 Pro;
 	content:"\f105";
 	color:#aaa;
 	margin-right:8px;
@@ -7359,7 +7359,7 @@ body.bg-img{
 }
 .foot .foot-item ul li :before {
 	line-height: 30px;
-	font-family: FontAwesome;
+	font-family: 'Font Awesome 5 Pro';
 	content: "\f105";
 	font-size: 13px;
 	margin-right: 7px;
