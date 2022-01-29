@@ -15,7 +15,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BenimZamanlarim</RootNamespace>
     <AssemblyName>BenimZamanlarim</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
@@ -26,6 +26,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <Use64BitIISExpress />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -56,16 +57,14 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
@@ -107,6 +106,7 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
@@ -663,6 +663,7 @@
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\bordeaux-fenerbahce-800x300.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\bordeaux-fenerbahce-thumb.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\bordeaux-fenerbahce.jpg" />
+    <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\Bursaspor_1979-80-thumb.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\Bursaspor_1979-80.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\cenk-koray-thumb.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\cenk-koray.jpg" />
@@ -676,6 +677,7 @@
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\haftanin-onbiri.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\inek-saban-thumb.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\inek-saban.jpg" />
+    <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\Ingiltere_8-0-thumb.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\Ingiltere_8-0.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\jupp-derwall-thumb.jpg" />
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\jupp-derwall.jpg" />
@@ -697,6 +699,10 @@
     <Content Include="Content\Images\Tales\BirZamanlarTurkFutbolu\turkiye-macaristan.jpg" />
     <Content Include="Content\Images\Tales\BizimZamanlarimiz\HuckFinn-800x400.jpg" />
     <Content Include="Content\Images\Tales\BizimZamanlarimiz\KenanEvrenZonguldak.jpg" />
+    <Content Include="Content\Images\Tales\BizimZamanlarimiz\kucuk-kiz-ayca-thumb.jpg" />
+    <Content Include="Content\Images\Tales\BizimZamanlarimiz\kucuk-kiz-ayca.jpg" />
+    <Content Include="Content\Images\Tales\BizimZamanlarimiz\sultani-yegah-thumb.jpg" />
+    <Content Include="Content\Images\Tales\BizimZamanlarimiz\sultani-yegah.jpg" />
     <Content Include="Content\Images\Tales\Boncuk\302s-cizim.jpg" />
     <Content Include="Content\Images\Tales\Boncuk\302s-transparent-thumb.png" />
     <Content Include="Content\Images\Tales\Boncuk\302s-transparent.png" />
