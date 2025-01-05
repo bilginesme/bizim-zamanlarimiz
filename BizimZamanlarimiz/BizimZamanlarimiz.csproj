@@ -746,11 +746,13 @@
     <Content Include="Content\Images\Tales\TeksasTommiks\tatilde-texsas-tommiks-thumb.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\tatilde-texsas-tommiks.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\teksas-800x300.jpg" />
+    <Content Include="Content\Images\Tales\TeksasTommiks\teksas-thumb.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\teksas-tommiks-reklam-thumb.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\teksas-tommiks-reklam.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\teksas-tommiks-yanyana-800x300.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\teksas-tum-kapak-thumb.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\teksas-tum-kapak.jpg" />
+    <Content Include="Content\Images\Tales\TeksasTommiks\teksas.png" />
     <Content Include="Content\Images\Tales\TeksasTommiks\Teksas600x300.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\Teksas800x300.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\tommiks-arkada-teksas-eski-thumb.jpg" />
@@ -758,6 +760,8 @@
     <Content Include="Content\Images\Tales\TeksasTommiks\tommiks-arkada-teksas-thumb.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\tommiks-arkada-teksas.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\tommiks-teksas-800x300.jpg" />
+    <Content Include="Content\Images\Tales\TeksasTommiks\tommiks-thumb.jpg" />
+    <Content Include="Content\Images\Tales\TeksasTommiks\tommiks.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\TommiksTekMecmua.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\yaz-tatilinde-ne-yapacagim-thumb.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\yaz-tatilinde-ne-yapacagim.jpg" />
@@ -975,6 +979,7 @@
     <Content Include="webfonts\fa-solid-900.woff" />
     <Content Include="webfonts\fa-solid-900.woff2" />
     <Content Include="Views\Home\TermsOfUse.cshtml" />
+    <Content Include="Views\Home\ParCommentFormAjax.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

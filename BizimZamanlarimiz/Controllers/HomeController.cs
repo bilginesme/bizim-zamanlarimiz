@@ -80,6 +80,12 @@ namespace BenimZamanlarim.Controllers
 
             return View();
         }
+        public ActionResult ParCommentFormAjax()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
         public ActionResult ParAuthor()
         {
             ViewBag.Message = "Your application description page.";
