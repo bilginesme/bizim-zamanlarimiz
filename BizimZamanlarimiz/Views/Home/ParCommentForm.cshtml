@@ -11,18 +11,21 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="form-group">
-                        <input type="text" name="name" class="form-control" placeholder="Enter Name">
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter Name">
+                        <div class="text-danger" id="divWarningName">Please enter your name</div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
-                        <input type="text" name="email" class="form-control" placeholder="Enter Email">
+                        <input type="text" name="email" id="email" class="form-control" placeholder="Enter Email">
+                        <div class="text-danger" id="divWarningEmail">Please enter a valid email address</div>
                     </div>
                 </div>
 
             </div>
             <div class="form-group">
-                <textarea class="form-control" rows="7" name="message" placeholder="Enter Message"></textarea>
+                <textarea class="form-control" rows="7" name="message" id="message" placeholder="Enter Message"></textarea>
+                <div class="text-danger" id="divWarningMessage">Please enter a message in the textarea.</div>
             </div>
 
             <div class="form-group">
@@ -32,9 +35,12 @@
                     &nbsp;&nbsp;
                 </span>
             </div>
+
+            <div class="form-group" id="my-form-status" name="my-form-status">
+                STATUS HERE
+            </div>
         </form>
     </div>
-
 </div>
 
 
@@ -48,7 +54,7 @@
     divWarningName.style.display = 'none';
     divWarningEmail.style.display = 'none';
     divWarningMessage.style.display = 'none';
-
+ 
     async function handleSubmit(event) {
         divWarningName.style.display = 'none';
         divWarningEmail.style.display = 'none';
@@ -114,6 +120,11 @@
         divFormStatus.style.display = 'block';
     }
 
+    function isValidEmail(email) {
+        // Basic email regex
+        const emailRegex = /^[^\s@@]+@@[^\s@@]+\.[^\s@@]+$/;
+        return emailRegex.test(email);
+    }
 
     form.addEventListener("submit", handleSubmit);
 </script>
