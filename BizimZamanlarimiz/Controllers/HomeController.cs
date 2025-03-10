@@ -22,6 +22,13 @@ namespace BenimZamanlarim.Controllers
             return View();
         }
 
+        public ActionResult ImagesIPicked()
+        {
+            ViewBag.Message = "Images I picked";
+
+            return View();
+        }
+
         public ActionResult TermsOfUse()
         {
             ViewBag.Message = "Terms of use here.";
