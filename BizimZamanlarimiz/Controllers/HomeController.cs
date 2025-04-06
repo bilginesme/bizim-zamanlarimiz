@@ -24,7 +24,7 @@ namespace BenimZamanlarim.Controllers
 
         public ActionResult ImagesIPicked()
         {
-            ViewBag.Message = "Images I picked";
+            ViewBag.Message = "Arşiv";
 
             return View();
         }
