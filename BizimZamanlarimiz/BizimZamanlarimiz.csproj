@@ -737,8 +737,12 @@
     <Content Include="Content\Images\Tales\Boncuk\zonguldak-terminalinde.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\ceylan-yayinlari-teksas-tommiks-thumb.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\ceylan-yayinlari-teksas-tommiks.jpg" />
+    <Content Include="Content\Images\Tales\TeksasTommiks\django-thumb.jpg" />
+    <Content Include="Content\Images\Tales\TeksasTommiks\django.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\dunyada-herkes-800x300.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\Fenerbahce1980.jpg" />
+    <Content Include="Content\Images\Tales\TeksasTommiks\kadikoy-bufe-thumb.jpg" />
+    <Content Include="Content\Images\Tales\TeksasTommiks\kadikoy-bufe.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\kemal-sunal-yuz-numarali-adam-thumb.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\kemal-sunal-yuz-numarali-adam.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\mister-no-thumb.jpg" />
@@ -747,6 +751,8 @@
     <Content Include="Content\Images\Tales\TeksasTommiks\neden-teksas-tommiks.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\red-kit-thumb.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\red-kit.jpg" />
+    <Content Include="Content\Images\Tales\TeksasTommiks\sergio-bonelli-thumb.jpg" />
+    <Content Include="Content\Images\Tales\TeksasTommiks\sergio-bonelli.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\tatilde-texsas-tommiks-thumb.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\tatilde-texsas-tommiks.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\teksas-800x300.jpg" />
@@ -771,6 +777,8 @@
     <Content Include="Content\Images\Tales\TeksasTommiks\yaz-tatilinde-ne-yapacagim.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\yuz-numarali-adam-thumb.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\yuz-numarali-adam.jpg" />
+    <Content Include="Content\Images\Tales\TeksasTommiks\zagor-thumb.jpg" />
+    <Content Include="Content\Images\Tales\TeksasTommiks\zagor.jpg" />
     <Content Include="Content\Images\Tales\Zonguldakspor\HaftaninTakimiZonguldak1982.jpg" />
     <Content Include="Content\Images\Tales\Zonguldakspor\LiderZonguldakH23.jpg" />
     <Content Include="Content\Images\Tales\Zonguldakspor\YilinKadrosu-1979-1980.jpg" />
