@@ -5,40 +5,38 @@
 
 <div class="well ">
     <div id="divResults">
-        <h4><i class="fa fa-comments color"></i>&nbsp; Yorum Yaz Ajax</h4><!-- Form -->
+        <h4><i class="fa fa-comments color"></i>&nbsp; Yorum Yaz</h4><!-- Form -->
         <hr />
         <form id="my-form" action="https://formspree.io/f/xblljqql" method="post" role="form" class="mb-5 mb-lg-7" novalidate>
             <div class="row">
                 <div class="col-md-4">
                     <div class="form-group">
                         <input type="text" name="name" id="name" class="form-control" placeholder="Enter Name">
-                        <div class="text-danger" id="divWarningName">Please enter your name</div>
+                        <div class="text-danger" id="divWarningName">Adınızı giriniz</div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
                         <input type="text" name="email" id="email" class="form-control" placeholder="Enter Email">
-                        <div class="text-danger" id="divWarningEmail">Please enter a valid email address</div>
+                        <div class="text-danger" id="divWarningEmail">Soyadınızı giriniz</div>
                     </div>
                 </div>
 
             </div>
             <div class="form-group">
                 <textarea class="form-control" rows="7" name="message" id="message" placeholder="Enter Message"></textarea>
-                <div class="text-danger" id="divWarningMessage">Please enter a message in the textarea.</div>
+                <div class="text-danger" id="divWarningMessage">Mesajınız</div>
             </div>
 
             <div class="form-group">
-                <button type="submit" class="btn btn-color">Submit</button>
+                <button type="submit" class="btn btn-color">Gönder</button>
                 <span id="divSendingMessage" hidden="hidden" class="text-muted pull-left" style="margin-top:4px">
                     <i class="fa fa-circle-o-notch fa-spin orange fa-2x" style="color:orange"></i>
                     &nbsp;&nbsp;
                 </span>
             </div>
 
-            <div class="form-group" id="my-form-status" name="my-form-status">
-                STATUS HERE
-            </div>
+            <div class="form-group" id="my-form-status" name="my-form-status"></div>
         </form>
     </div>
 </div>

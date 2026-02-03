@@ -997,7 +997,7 @@
     <Content Include="webfonts\fa-solid-900.woff" />
     <Content Include="webfonts\fa-solid-900.woff2" />
     <Content Include="Views\Home\TermsOfUse.cshtml" />
-    <Content Include="Views\Home\ParCommentFormAjax.cshtml" />
+    <Content Include="Views\Home\ParCommentFormAjaxOBSOLETE.cshtml" />
     <Content Include="Views\Home\ImagesIPicked.cshtml" />
   </ItemGroup>
   <ItemGroup>
