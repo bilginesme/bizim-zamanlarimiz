@@ -50,5 +50,11 @@ namespace BenimZamanlarim.Controllers
 
             return View();
         }
+        public ActionResult KandilliTrenHatti()
+        {
+            ViewBag.Message = "Kandilli Tren Hattı.";
+
+            return View();
+        }
     }
 }

@@ -741,6 +741,20 @@
     <Content Include="Content\Images\Tales\Boncuk\zonguldak-terminali-thumb.jpg" />
     <Content Include="Content\Images\Tales\Boncuk\zonguldak-terminali.jpg" />
     <Content Include="Content\Images\Tales\Boncuk\zonguldak-terminalinde.jpg" />
+    <Content Include="Content\Images\Tales\KandilliTrenHatti\eregli-armutcuk-45001-nolu-lokomotif-thumb.jpg" />
+    <Content Include="Content\Images\Tales\KandilliTrenHatti\eregli-armutcuk-45001-nolu-lokomotif.jpg" />
+    <Content Include="Content\Images\Tales\KandilliTrenHatti\eregli-armutcuk-g82-thumb.jpg" />
+    <Content Include="Content\Images\Tales\KandilliTrenHatti\eregli-armutcuk-g82.jpg" />
+    <Content Include="Content\Images\Tales\KandilliTrenHatti\eregli-kandilli-1989-thumb.jpg" />
+    <Content Include="Content\Images\Tales\KandilliTrenHatti\eregli-kandilli-1989.jpg" />
+    <Content Include="Content\Images\Tales\KandilliTrenHatti\eregli-kemer-thumb.jpg" />
+    <Content Include="Content\Images\Tales\KandilliTrenHatti\eregli-kemer.jpg" />
+    <Content Include="Content\Images\Tales\KandilliTrenHatti\ereglide-calisan-son-lokomotif-thumb.jpg" />
+    <Content Include="Content\Images\Tales\KandilliTrenHatti\ereglide-calisan-son-lokomotif.jpg" />
+    <Content Include="Content\Images\Tales\KandilliTrenHatti\kandilli-eregli-1990-erdal-yazici-thumb.jpg" />
+    <Content Include="Content\Images\Tales\KandilliTrenHatti\kandilli-eregli-1990-erdal-yazici.jpg" />
+    <Content Include="Content\Images\Tales\KandilliTrenHatti\kandilli-lavuari-1947-thumb.jpg" />
+    <Content Include="Content\Images\Tales\KandilliTrenHatti\kandilli-lavuari-1947.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\ceylan-yayinlari-teksas-tommiks-thumb.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\ceylan-yayinlari-teksas-tommiks.jpg" />
     <Content Include="Content\Images\Tales\TeksasTommiks\django-thumb.jpg" />
@@ -999,6 +1013,7 @@
     <Content Include="Views\Home\TermsOfUse.cshtml" />
     <Content Include="Views\Home\ParCommentFormAjaxOBSOLETE.cshtml" />
     <Content Include="Views\Home\ImagesIPicked.cshtml" />
+    <Content Include="Views\Tales\KandilliTrenHatti.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
